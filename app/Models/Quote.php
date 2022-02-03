@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Cache;
 
 class Quote extends Model
 {
@@ -15,16 +14,5 @@ class Quote extends Model
         'text',
         'name'
     ];
-
-    protected static function booted()
-    {
-        static::saving(function() {
-            Cache::forget('allQuotes');
-        });
-        
-        static::deleted(function() {
-            Cache::forget('allQuotes');
-        });
-    }
     
 }

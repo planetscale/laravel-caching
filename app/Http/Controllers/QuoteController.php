@@ -16,15 +16,10 @@ class QuoteController extends Controller
      */
     public function index()
     {
-        $startTime = microtime(true); // start timer
+        
+        $quotes = Quote::all();
 
-        $quotes = Cache::remember('allQuotes', 3600, function() {
-            return Quote::all();
-        });
-
-        $totalTime = microtime(true) - $startTime; // end timer 
         return response()->json([
-            'totalTime' => $totalTime,
             'quotes' => $quotes
         ]);        
     }
