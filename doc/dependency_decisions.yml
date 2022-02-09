@@ -41,3 +41,55 @@
     :why: 
     :versions: []
     :when: 2022-02-09 19:17:53.842298000 Z
+- - :ignore
+  - fs-monkey
+  - :who: 
+    :why: 
+    :versions: []
+    :when: 2022-02-09 19:20:33.591584000 Z
+- - :ignore
+  - memfs
+  - :who: 
+    :why: 
+    :versions: []
+    :when: 2022-02-09 19:20:39.380913000 Z
+- - :approve
+  - pako
+  - &1
+    :who: 
+    :why: 
+    :versions: []
+    :when: 2022-02-09 19:20:55.263329000 Z
+- - :approve
+  - MIT
+  - *1
+- - :approve
+  - caniuse-lite
+  - &2
+    :who: 
+    :why: 
+    :versions: []
+    :when: 2022-02-09 19:21:44.998651000 Z
+- - :approve
+  - CC-BY-4.0
+  - *2
+- - :approve
+  - mdn-data
+  - &3
+    :who: 
+    :why: 
+    :versions: []
+    :when: 2022-02-09 19:21:54.642773000 Z
+- - :approve
+  - CC0-1.0
+  - *3
+- - :approve
+  - tslib
+  - &4
+    :who: 
+    :why: 
+    :versions: []
+    :when: 2022-02-09 19:22:08.276627000 Z
+- - :approve
+  - 0BSD
+  - *4
