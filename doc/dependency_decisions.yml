@@ -1,0 +1,7 @@
+---
+- - :permit
+  - bsd-2-clause
+  - :who:
+    :why:
+    :versions: []
+    :when: 2022-02-09 19:09:41.631982000 Z
